@@ -27,6 +27,7 @@ function showNotification() {
         if (messages.length > 0) {
             // Display the message at the current index
             const message = messages[currentIndex];
+
             chrome.storage.local.set({ currentMessage: message }, () => {
                 chrome.windows.create({
                     url: "notification.html",
@@ -48,6 +49,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === "showMessage") {
         showNotification();
     }
+
 });
 
 // Listen for start schedule message from the popup
