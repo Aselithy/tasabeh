@@ -28,3 +28,8 @@ button {
     border: none;
     cursor: pointer;
 }
+
+
+main > div.container { 
+    min-width: 400px;
+}

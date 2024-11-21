@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.storage.local.set({ messages, interval }, () => {
             chrome.runtime.sendMessage({ action: 'startSchedule' });
             alert("Schedule started with the specified messages and interval.");
+            window.close();
         });
     });
 });
