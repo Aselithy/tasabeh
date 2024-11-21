@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<img src="icon48.png" alt="Icon" style="width: 24px; height: 24px;" />-->
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduled Messages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Set Messages and Interval</h2>
+<form id="messageForm">
+    <div class="message-inputs">
+        <input type="text" id="msg1" placeholder="Message 1" />
+        <input type="text" id="msg2" placeholder="Message 2" />
+        <input type="text" id="msg3" placeholder="Message 3" />
+        <input type="text" id="msg4" placeholder="Message 4" />
+        <input type="text" id="msg5" placeholder="Message 5" />
+        <input type="text" id="msg6" placeholder="Message 6" />
+    </div>
+    <label for="interval">Interval (minutes):</label>
+    <input type="number" id="interval" min="1" placeholder="Enter interval in minutes" />
+    <button type="button" id="startButton">Start Schedule</button>
+</form>
+<script src="popup.js"></script>
+</body>
+</html>
